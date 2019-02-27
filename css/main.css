@@ -1,0 +1,110 @@
+/*!
+ * OAZ Development v0.0.1
+ * Copyright 2016 Seba Collado.
+ */
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue_Bold.otf);
+}
+
+body {
+    background-color: #222;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: BebasNeue, sans-serif;
+    font-size: 4em;
+}
+
+h2 {
+    color: white;
+    font-size: 1.75em;
+}
+
+#main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    #main-container {
+        position: relative;
+        padding-top: 1em;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}
+
+/* ---- main logo ---- */
+
+img#logo {
+    position: relative;
+    z-index: 1000;
+}
+
+img#logo:hover {
+    position: relative;
+    z-index: 1000;
+    background-color: #222222;
+}
+
+.box_cover {
+    color: white;
+    border: 3px solid white;
+    padding: 0.3em 0em 0.3em 0em;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1000;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.box_cover:hover {
+    background-color: #222222;
+}
+
+/* ---- background video ---- */
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+/* ---- particles.js ---- */
+#particles-js {
+    z-index: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.bg-light-transparent {
+    background-color: #f8f9fa1a !important;
+}
